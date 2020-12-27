@@ -13,9 +13,7 @@ const useStyles = makeStyles((theme) => ({
     "& *> .caption": {
       paddingRight: "0.5rem",
     },
-
     borderRadius: "0.5rem",
-
     color: colors.indigo[800],
     "&.connect": {
       backgroundColor: colors.blue[50],
@@ -26,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
     "&.connected": {
       backgroundColor: "#fff",
     },
-
     textTransform: "none",
     fontWeight: 800,
     cursor: "pointer",

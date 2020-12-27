@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     height: "2.5rem",
     borderRadius: "0.5rem",
-
     color: colors.indigo[800],
     "&.connect": {
       backgroundColor: colors.blue[50],
@@ -26,7 +25,6 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: "bold",
       },
     },
-
     textTransform: "none",
     fontWeight: 800,
     cursor: "pointer",
