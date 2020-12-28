@@ -1,6 +1,6 @@
 # web3-connect-react
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/04aab1e8-fa99-4bca-8cb2-7eb361df7c7a/deploy-status)](https://app.netlify.com/sites/web3-connect-react/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0c438365-0f20-4382-90b8-7a147843135a/deploy-status)](https://app.netlify.com/sites/web3-connect-react/deploys)
 
 An example web app to demonstrate connecting to an Ethereum based cryptocurrency wallet like MetaMask using Web3.
 
