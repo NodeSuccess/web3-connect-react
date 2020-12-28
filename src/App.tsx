@@ -3,6 +3,7 @@ import {
   AppBar,
   Container,
   IconButton,
+  Link,
   Toolbar,
   Typography,
 } from "@material-ui/core";
@@ -17,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
   },
   main: {
-    height: "100vh",
+    width: "80vw",
+    height: "90vh",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -25,6 +27,11 @@ const useStyles = makeStyles((theme) => ({
     "& > *": {
       textAlign: "center",
     },
+  },
+  builtByText: {
+    position: "absolute",
+    bottom: "1rem",
+    margin: "0 auto",
   },
 }));
 
@@ -42,10 +49,29 @@ const App: React.FC = () => {
         </Toolbar>
       </AppBar>
       <Container classes={{ root: styles.main }}>
-        <Typography variant="h5" gutterBottom>
-          Demonstrates basic wallet connectivity
+        <Typography variant="h4" gutterBottom>
+          Web3 Connect
         </Typography>
-        <Typography variant="caption">Built by NodeSuccess</Typography>
+        <Typography variant="subtitle1" gutterBottom>
+          An example web app to demonstrate connecting to an Ethereum based
+          cryptocurrency wallet using Web3.
+        </Typography>
+        <br />
+        <Typography variant="body1" color="textSecondary" gutterBottom>
+          If your browser is supports Web3 then you be prompted by your wallet
+          software to connect.
+        </Typography>
+        <Typography variant="body1" color="textSecondary" gutterBottom>
+          Once accepted as a connected site the app will automatically connect
+          to your wallet when subsequent visits.
+        </Typography>
+        <Typography variant="body1" color="textSecondary" gutterBottom>
+          In order to remove this app with your wallet, remove the app URL from
+          your walllet's connected sites.
+        </Typography>
+        <Typography classes={{ root: styles.builtByText }} variant="caption">
+          <Link href="https://nodesuccess.com">Built by NodeSuccess</Link>
+        </Typography>
       </Container>
     </div>
   );
